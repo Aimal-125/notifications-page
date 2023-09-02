@@ -1,0 +1,400 @@
+@font-face {
+	font-family: "Plus Jakarta Sans";
+	src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family: "Plus Jakarta Sans";
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+body {
+	min-height: 100vh;
+}
+.container {
+	min-height: 100vh;
+	background: lightgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.miniContainer1 {
+	width: 50%;
+	min-height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	box-shadow: 0 0 4vh 0 rgba(0, 0, 0, 0.2);
+	border-radius: 2vh;
+}
+.miniContainer2 {
+	border-radius: 2vh;
+	width: 100%;
+	min-height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.miniContainer3 {
+	box-shadow: 0 3vh 3vh 0 rgba(0, 0, 0, 0.5);
+	border-radius: 2vh;
+	width: 100%;
+	min-height: 85vh;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	padding: 2vh;
+}
+.notification {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.notificationContainer {
+	display: flex;
+	gap: 2vh;
+}
+.notification p {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 2vh;
+}
+#numbers {
+	width: 4vh;
+	height: 4vh;
+	border-radius: 1vh;
+	background: hsl(219, 85%, 26%);
+	color: white;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2vh;
+}
+#readBtn {
+	border: none;
+	cursor: pointer;
+	background: white;
+	font-size: 2vh;
+	font-weight: 500;
+}
+#readBtn:hover {
+	color: blue;
+}
+.msgContainer {
+	display: flex;
+	flex-direction: column;
+	border-radius: 1vh;
+}
+.new {
+	padding: 2vh;
+	background: hsl(219, 85%, 98%);
+}
+.new-white {
+	background: white;
+}
+.picDiv {
+	border-radius: 50%;
+	clip-path: circle(50%);
+	width: 5vh;
+	height: 5vh;
+}
+.picDiv img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.littleContainer {
+	display: flex;
+	align-items: center;
+	gap: 2vh;
+	position: relative;
+}
+span {
+	letter-spacing: 0.1vh;
+}
+.firstText {
+	font-weight: bold;
+	font-size: 2vh;
+	cursor: pointer;
+}
+.nameSpan:hover {
+	color: red;
+}
+.midText {
+	color: hsl(219, 14%, 63%);
+	font-size: 2vh;
+}
+.lastText {
+	font-weight: 600;
+	font-size: 2vh;
+	cursor: pointer;
+	color: hsl(219, 12%, 42%);
+}
+.lastText:hover {
+	color: blue;
+}
+.lastText span {
+	color: lightskyblue;
+	font-weight: bold;
+}
+.lastText span:hover {
+	color: blue;
+} 
+.redDot {
+	display: inline-block;
+	width: 1vh;
+	height: 1vh;
+	margin-top: 0.5vh;
+	border-radius: 50%;
+	clip-path: circle(50%);
+	background: red;
+}
+.redDot-invisible {
+	width: 0;
+	height: 0;
+}
+.smallText {
+	font-size: 1.5vh; 
+	width: 20%;
+	margin-left: 7vh;
+	left: 10%; 
+	color: hsl(219, 14%, 63%);
+}
+.rizkyDiv {
+	border: 0.2vh solid hsl(219, 14%, 90%);
+	border-radius: 1vh;
+	padding: 2vh;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	transform: translateX(-3%);
+	-webkit-transform: translateX(-3%);
+	margin-top: 1vh;
+	font-size: 2vh;
+	cursor: pointer;
+}
+.rizkyDiv:hover {
+	background: aliceblue;
+}
+.picDiv2 {
+	width: 5vh;
+	height: 5vh;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	border-radius: 0.7vh;
+}
+.picDiv2:hover {
+	outline-offset: 0.5vh;
+	outline: 0.5vh solid blue;
+	border-radius: 0.7vh;
+}
+.picDiv2 img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.extra {
+	padding: 1vh 2vh 0vh 2vh;
+}
+.nSpan1 {
+	font-weight: initial;
+	color: hsl(219, 14%, 63%);
+	font-size: 2vh;
+	margin-left: 0.5vh;
+}
+.nSpan2 {
+	font-weight: 600;
+	font-size: 2vh;
+	cursor: pointer;
+	margin-left: 0.5vh;
+	color: hsl(219, 12%, 42%);
+}
+.nSpan2:hover {
+	color: blue;
+}
+.nathanPic {
+	width: 6vh;
+}
+
+@media screen and (max-width: 1350px) {
+	.miniContainer1 {
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	.miniContainer2 {
+		border-radius: 0;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.miniContainer3 {
+		box-shadow: none;
+		border-radius: 0;
+		width: 100%;
+		min-height: 100vh;
+		background: white;
+		display: flex;
+		flex-direction: column;
+		gap: 1vh;
+		padding: 2vh;
+	}
+}
+@media screen and (max-width: 650px) {
+	.firstText {
+		font-size: 1.5vh;
+	}
+	.midText {
+		font-size: 1.5vh;
+	}
+	.lastText {
+		font-size: 1.5vh;
+	}
+	.rizkyDiv {
+		font-size: 1.5vh;
+		left: 20%;
+	}
+	.nSpan1 {
+		font-size: 1.5vh;
+	}
+	.nSpan2 {
+		font-size: 1.5vh;
+	}
+	.nameSpan {
+		font-size: 1.5vh;
+	}
+	.markPic {
+		width: 8vh;
+	}
+	.nathanPic {
+		width: 12vh;
+	}
+}
+@media screen and (max-height: 400px) {
+	.miniContainer3 {
+		padding: 4vh;
+	}
+	.firstText {
+		font-size: 3vh;
+	}
+	.midText {
+		font-size: 3vh;
+	}
+	.lastText {
+		font-size: 3vh;
+	}
+	.rizkyDiv {
+		font-size: 3vh;
+		left: 20%;
+	}
+	.nSpan1 {
+		font-size: 3vh;
+	}
+	.nSpan2 {
+		font-size: 3vh;
+	}
+	.nameSpan {
+		font-size: 3vh;
+	}
+	.smallText {
+		font-size: 3vh;
+		margin-left: 12vh;
+	}
+	.redDot {
+		width: 2vh;
+		height: 2vh;
+	}
+	.redDot-invisible {
+		width: 0;
+		height: 0;
+	}
+	.picDiv {
+		width: 10vh;
+		height: 10vh;
+	}
+	.picDiv2 {
+		width: 10vh;
+		height: 10vh;
+		right: 60%;
+	}
+	.picDiv2 img {
+		object-fit: cover;
+	}
+	.picDiv img {
+		object-fit: cover;
+	}
+	.markPic {
+		width:  10vh;
+	}
+	.nathanPic {
+		width: 10vh;
+	}
+	.rizkyDiv {
+		padding: 4vh;
+	}
+	.notification {
+		padding: 1vh;
+	}
+	.notification p {
+		font-size: 4vh;
+	}
+	#numbers {
+		font-size: 4vh;
+		width: 7vh;
+		height: 7vh;
+	}
+	#readBtn {
+		font-size: 4vh;
+	}
+}
+@media screen and (min-height: 2000px) {
+	.miniContainer1 {
+		width: 80%;
+	}
+	.firstText {
+		font-size: 1vh;
+	}
+	.midText {
+		font-size: 1vh;
+	}
+	.lastText {
+		font-size: 1vh;
+	}
+	.rizkyDiv {
+		font-size: 1vh;
+		left: 20%;
+	}
+	.nSpan1 {
+		font-size: 1vh;
+	}
+	.nSpan2 {
+		font-size: 1vh;
+	}
+	.nameSpan {
+		font-size: 1vh;
+	}
+	.smallText {
+		font-size: 1vh;
+	}
+}
