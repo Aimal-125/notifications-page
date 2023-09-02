@@ -132,20 +132,19 @@ span {
 	color: red;
 }
 .midText {
-	color: hsl(219, 14%, 63%);
+	color: green;
 	font-size: 2vh;
 }
 .lastText {
 	font-weight: 600;
 	font-size: 2vh;
 	cursor: pointer;
-	color: hsl(219, 12%, 42%);
+	color: deepskyblue;
 }
 .lastText:hover {
 	color: blue;
 }
-.lastText span {
-	color: lightskyblue;
+.lastText span { 
 	font-weight: bold;
 }
 .lastText span:hover {
@@ -169,10 +168,10 @@ span {
 	width: 20%;
 	margin-left: 7vh;
 	left: 10%; 
-	color: hsl(219, 14%, 63%);
+	color: black;
 }
 .rizkyDiv {
-	border: 0.2vh solid hsl(219, 14%, 90%);
+	border: 0.2vh solid darkgreen;
 	border-radius: 1vh;
 	padding: 2vh;
 	width: 80%;
@@ -183,6 +182,7 @@ span {
 	margin-top: 1vh;
 	font-size: 2vh;
 	cursor: pointer;
+	color: green;
 }
 .rizkyDiv:hover {
 	background: aliceblue;
@@ -211,7 +211,7 @@ span {
 }
 .nSpan1 {
 	font-weight: initial;
-	color: hsl(219, 14%, 63%);
+	color: green;
 	font-size: 2vh;
 	margin-left: 0.5vh;
 }
@@ -220,7 +220,7 @@ span {
 	font-size: 2vh;
 	cursor: pointer;
 	margin-left: 0.5vh;
-	color: hsl(219, 12%, 42%);
+	color: deepskyblue;
 }
 .nSpan2:hover {
 	color: blue;
